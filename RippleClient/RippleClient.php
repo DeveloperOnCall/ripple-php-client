@@ -70,10 +70,13 @@ class RippleClient {
     /**
      * Ejecuta la petición a la red de nodos
      * 
+     * @param string $endpoint : endpoint de la api
+     * 
      * @throws ApiError si hay algún problema en la llamada 
      * @return array
     */
-    private function execute() : array {
+    private function execute(string $endpoint) : array {
+        curl_setopt($this->connect, CURLOPT_URL, self::serverApiNode . $endpoint);
         $primitiveResponse = curl_exec($this->connect);
 
         # Verificar si hay error en la llamada
@@ -128,7 +131,7 @@ class RippleClient {
         curl_setopt($this->connect, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
         curl_setopt($this->connect, CURLOPT_POSTFIELDS, $data_json); 
         
-        return $this->execute();
+        return $this->execute($endpoint);
     }
 
     /**
@@ -141,9 +144,8 @@ class RippleClient {
     public function get(string $endpoint) : array {
         $this->setHeaders();
         curl_setopt($this->connect, CURLOPT_POST, false);
-        curl_setopt($this->connect, CURLOPT_URL, self::serverApiNode . $endpoint);
 
-        return $this->execute();
+        return $this->execute($endpoint);
     }
 
     /**

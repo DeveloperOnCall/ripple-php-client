@@ -15,11 +15,11 @@ use Ocrend\RippleClient\AbstractEntity;
 use Ocrend\RippleClient\Interfaces\IEntity;
 
 /**
- * Manejador de Ordenes en la red Ripple
+ * Manejador de Transacciones en la red Ripple
  *
  * @author Brayan Narváez <princk093@gmail.com>
  */
-class Orders extends AbstractEntity implements IEntity {
+class Payments extends AbstractEntity implements IEntity {
 
     /**
      * Establece el cliente para la entidad
@@ -32,31 +32,32 @@ class Orders extends AbstractEntity implements IEntity {
         parent::__construct($client);
     }
 
-
     /**
-     * Obtiene todas las ordenes de una wallet
-     * 
-     * @return array
+     * Obtiene el detalle de una transacción según su ID
      */
-    public function getOrders() : array {
+    public function getTransaction() {
 
     }
 
     /**
-     * Prepara y crea una orden
-     * 
-     * @return array
+     * Obtiene las transacciones de una wallet
      */
-    public function createOrder() : array {
+    public function getTransactions() {
 
     }
 
     /**
-     * Cancela una orden existente
-     * 
-     * @return array
+     * Crea una transacción desde una cuenta hacia otras dos
+     * otorgando una comisión a uno de los dos destinos
      */
-    public function cancelOrder() : array {
+    public function createPaymentWithFee() {
+
+    }
+
+    /**
+     * Crea una transacción desde una cuenta hacia otra
+     */
+    public function createPayment() {
 
     }
 

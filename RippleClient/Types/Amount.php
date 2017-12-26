@@ -59,7 +59,7 @@ class Amount {
         'AED',        'USD',        'UGX',
         'UAH',        'UYU',        'UZS',
         'VEB',        'VND',        'AMK',
-        'ZWD',        'XRP'
+        'ZWD',        'XRP',        'BTC'
     ];
 
     /**
