@@ -12,8 +12,7 @@
 namespace Ocrend\RippleClient\Exceptions;
 
 /**
- * Establece la conexion con el nodo de Ripple en el servidor de Ocrend
- * Provee de herramientas a la libreria para toda la comunicacion
+ * Excepción que ataja problemas producidos en la API
  *
  * @author Brayan Narváez <princk093@gmail.com>
  */
