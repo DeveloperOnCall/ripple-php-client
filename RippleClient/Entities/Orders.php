@@ -32,14 +32,6 @@ class Orders extends AbstractEntity implements IEntity {
         parent::__construct($client);
     }
 
-    /**
-     * Obtiene una orden especificada
-     * 
-     * @return array
-     */
-    public function getOrder() : array {
-
-    }
 
     /**
      * Obtiene todas las ordenes de una wallet
@@ -51,11 +43,20 @@ class Orders extends AbstractEntity implements IEntity {
     }
 
     /**
-     * Genera una orden
+     * Prepara y crea una orden
      * 
      * @return array
      */
-    public function setOrder() : array {
+    public function createOrder() : array {
+
+    }
+
+    /**
+     * Cancela una orden existente
+     * 
+     * @return array
+     */
+    public function cancelOrder() : array {
 
     }
 

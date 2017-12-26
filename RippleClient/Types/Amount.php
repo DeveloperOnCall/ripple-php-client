@@ -13,13 +13,18 @@ namespace Ocrend\RippleClient\Types;
 use Ocrend\RippleClient\Exceptions\ParamException;
 
 /**
- * Manipula el tipo de dato amount
+ * Manipula el tipo de dato Amount
  *
  * @author Brayan Narváez <princk093@gmail.com>
  */
 
 class Amount {
     
+    /**
+     * Listado de monedas permitidas en la red Ripple
+     * 
+     * @var array
+     */
     const CURRENCIES = [
         'AFA',        'AWG',        'AUD',
         'ARS',        'AZN',        'BSD',
