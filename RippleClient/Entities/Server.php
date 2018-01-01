@@ -37,23 +37,6 @@ class Server extends AbstractEntity implements IEntity {
      * Obtiene información acerca del servidor de la red ripple
      * 
      * @return array
-     {
-        * El número de la versión que está corriendo de Ripple
-        "buildVersion" => "0.24.0-rc1",
-        * Expresión de rango que indica la secuencua de números de ledger
-        * que el servidor de Ripple tiene en su base de datos local
-        "completeLedgers" => "32570-6595042",
-        * Cantidad de tiempo dedicado a esperar que se realicen operaciones I/O
-        * Si este número es muy bajo, entonces el servidor de Ripple probablemente tiene serios problemas de carga
-        "ioLatencyMs" => 1,
-        * Información sobre la última vez que el servidor Ripple cerró un Ledger
-        "lastClose" => {
-            "convergeTimeS" => 2.007,
-            "proposers" => 4
-        },
-        * A cuántos servidores de Ripple está conectado actualmente el Nodo
-        "peers" => 53
-    }
      */
     public function getInfo() : array {
         return $this->client->get('server/info');

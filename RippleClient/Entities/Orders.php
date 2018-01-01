@@ -35,6 +35,7 @@ class Orders extends AbstractEntity implements IEntity {
 
     /**
      * Obtiene todas las ordenes de una wallet
+     * /order/{wallet}
      * 
      * @return array
      */
@@ -44,6 +45,7 @@ class Orders extends AbstractEntity implements IEntity {
 
     /**
      * Prepara y crea una orden
+     * /order/create
      * 
      * @return array
      */
@@ -53,6 +55,7 @@ class Orders extends AbstractEntity implements IEntity {
 
     /**
      * Cancela una orden existente
+     * /order/cancel
      * 
      * @return array
      */

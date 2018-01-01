@@ -33,31 +33,48 @@ class Payments extends AbstractEntity implements IEntity {
     }
 
     /**
-     * Obtiene el detalle de una transacción según su ID
+     * Obtiene el fee de la network de Ripple
+     * /payment/fee
+     * 
      */
-    public function getTransaction() {
+    public function getFee() : array {
+
+    }
+
+    /**
+     * Obtiene el detalle de una transacción según su ID
+     * /transaction/{id_transaction}
+     * 
+     */
+    public function getTransaction() : array {
 
     }
 
     /**
      * Obtiene las transacciones de una wallet
+     * /transactions/{wallet}/{limit}
+     * 
      */
-    public function getTransactions() {
+    public function getTransactions() : array {
 
     }
 
     /**
      * Crea una transacción desde una cuenta hacia otras dos
      * otorgando una comisión a uno de los dos destinos
+     * /payment/many
+     * 
      */
-    public function createPaymentWithFee() {
+    public function createPaymentWithFee() : array {
 
     }
 
     /**
      * Crea una transacción desde una cuenta hacia otra
+     * /payment
+     * 
      */
-    public function createPayment() {
+    public function createPayment() : array {
 
     }
 
