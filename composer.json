@@ -1,5 +1,5 @@
 {
-    "name": "ocrend-software/ripple-php-client",
+    "name": "developeroncall/ripple-php-client",
     "type": "library",
     "description": "A php client library for connect with ripple network",
     "keywords": ["xrp","ripple","php client","api rest","xrp payments"],
@@ -19,7 +19,7 @@
     "repositories": [
         {
           "type": "git",
-          "url": "https://github.com/ocrend-software/ripple-php-client"
+          "url": "https://github.com/developeroncall/ripple-php-client"
         }
     ],
     "autoload": {
